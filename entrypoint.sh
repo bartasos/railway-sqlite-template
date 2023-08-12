@@ -5,6 +5,7 @@ already_did_init="/data/database.db"
 if [ ! -e "$already_did_init" ]; then
     echo "Running database init"
     sqlite3 /data/database.db
+    echo "Success running sqlite3 db"
 fi
 
 schema_not_changed_hash="ea53353fcafe419cc86e54163306d3005851a438"
